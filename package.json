@@ -1,0 +1,23 @@
+{
+  "name": "edgelock-server",
+  "version": "1.0.0",
+  "description": "EdgeLock daily data scheduler — fetches live odds, scores, props and serves them to the app",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "fetch": "node scheduler.js",
+    "test": "node test-fetch.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
